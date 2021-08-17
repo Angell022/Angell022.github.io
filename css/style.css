@@ -318,7 +318,9 @@ img {
 .skills__content {
   position: relative;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--container-color);
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
@@ -328,22 +330,21 @@ img {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
-.skills__img {
-  width: 40px;
-  align-self: center;
-  margin-bottom: var(--mb-2);
-}
 .skills__name {
   font-weight: var(--font-semi-bold);
-  color: var(--title-color);
+  color: #30CDEF;
   font-size: var(--normal-font-size);
 }
-.skills__name:hover {
-  color: var(--first-color-second);
+.skills__content svg{
+  filter: invert(1);
+}
+.skills__content svg:hover{
+  filter: invert(0);
 }
 .skills__content:hover {
-  background-image: url("../images/back.jpg");
+ background-image: url("../images/back.jpg");
   background-size: cover;
+  color: var(--first-color-second);
 }
 
 .services__container {
