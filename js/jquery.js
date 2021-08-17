@@ -74,8 +74,7 @@ const sr = ScrollReveal({
 sr.reveal(
   `.home__data, .home__img,
             .about__data, .about__img,
-            .skills__content, .menu__content,
-            .app__data, .app__img,
+            .skills__content, .services__content,
             .contact__data, .contact__button,
             .footer__content`,
   {
