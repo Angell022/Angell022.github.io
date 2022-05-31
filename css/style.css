@@ -389,6 +389,9 @@ img {
 .portfolio__img {
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 .portfolio__img img {
   border-radius: 0.5rem;
@@ -411,7 +414,14 @@ img {
   bottom: 0;
 }
 .portfolio__link-name {
-  color: var(--first-color-second);
+  color: var(--first-color-alt);
+}
+.card__social{
+  position: absolute;
+  
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--big-font-size);
 }
 .contact__container {
   text-align: center;
