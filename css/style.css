@@ -338,13 +338,15 @@ img {
 .skills__content svg{
   filter: invert(1);
 }
-.skills__content svg:hover{
+.skills__content:hover svg{
   filter: invert(0);
+}
+.skills__content:hover .skills__name{
+  color: var(--first-color-second);
 }
 .skills__content:hover {
  background-image: url("../images/back.jpg");
   background-size: cover;
-  color: var(--first-color-second);
 }
 
 .services__container {
