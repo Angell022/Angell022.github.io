@@ -445,6 +445,7 @@
 
     <!--========== FOOTER CONTACT==========-->
     <footer class="footer section container" id="contact">
+
       <div class="footer__container grid">
         <div class="footer__content">
           <h2 class="section__title">Contact Me</h2>
@@ -452,6 +453,49 @@
             >Whether it is a small venture, complex web app or business
             software, contact me.</span
           >
+
+          <form class="form" id="formulario">
+            <div class="form__section">
+              <input
+                class="form-control mb-2"
+                id="userName"
+                name="userName"
+                placeholder="Nombre"
+                autocomplete="off"
+                type="text"
+              />
+              <p class="text-danger mb-2 d-none" id="alertName"></p>
+            </div>
+    
+            <div class="form__section">
+              <input
+                class="form-control mb-2"
+                id="userEmail"
+                name="userEmail"
+                placeholder="Ingrese su email"
+                autocomplete="off"
+                type="email"
+              />
+              <p class="text-danger mb-2 d-none" id="alertEmail"></p>
+            </div>
+    
+            <div class="form__section">
+              <textarea
+                class="form__input form-control"
+                placeholder="Mensaje"
+              ></textarea>
+            </div>
+            <div class="form__section">
+              <input type="submit" class="form__input" />
+            </div>
+    
+            <div
+                    class="alert alert-success mt-2 d-none"
+                    id="alertSuccess"
+                ></div>
+          </form>
+
+
           <div class="redes-sociales">
             <a
               href="https://www.instagram.com/An_gell_2_2/"
