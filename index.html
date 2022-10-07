@@ -445,7 +445,6 @@
 
     <!--========== FOOTER CONTACT==========-->
     <footer class="footer section container" id="contact">
-
       <div class="footer__container grid">
         <div class="footer__content">
           <h2 class="section__title">Contact Me</h2>
@@ -457,44 +456,48 @@
           <form class="form" id="formulario">
             <div class="form__section">
               <input
-                class="form-control mb-2"
-                id="userName"
-                name="userName"
-                placeholder="Nombre"
-                autocomplete="off"
                 type="text"
+                id="user"
+                class="form__input"
+                placeholder=" "
+                autocomplete="off"
               />
+              <label for="user" class="form__label">Nombre:</label>
+              <span class="form__line"></span>
               <p class="text-danger mb-2 d-none" id="alertName"></p>
             </div>
-    
             <div class="form__section">
               <input
-                class="form-control mb-2"
-                id="userEmail"
-                name="userEmail"
-                placeholder="Ingrese su email"
+                type="text"
+                id="mail"
+                class="form__input"
+                placeholder=" "
                 autocomplete="off"
-                type="email"
               />
+              <label for="mail" class="form__label">Correo:</label>
+              <span class="form__line"></span>
               <p class="text-danger mb-2 d-none" id="alertEmail"></p>
             </div>
-    
+
             <div class="form__section">
-              <textarea
+              <textarea id="text-area"
                 class="form__input form-control"
-                placeholder="Mensaje"
+                placeholder=" "
               ></textarea>
+              <label for="text-area" class="form__label"
+                >Escribe un mensaje:</label
+              >
+              <span class="form__line"></span>
             </div>
             <div class="form__section">
               <input type="submit" class="form__input" />
             </div>
-    
-            <div
-                    class="alert alert-success mt-2 d-none"
-                    id="alertSuccess"
-                ></div>
-          </form>
 
+            <div
+              class="alert alert-success mt-2 d-none"
+              id="alertSuccess"
+            ></div>
+          </form>
 
           <div class="redes-sociales">
             <a

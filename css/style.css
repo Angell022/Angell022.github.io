@@ -497,7 +497,7 @@ img {
 }
 
 .form {
-  min-width: 400px;
+  min-width: 300px;
   flex: 1;
   text-align: center;
   padding: 30px;
@@ -505,50 +505,45 @@ img {
 }
 .form__section {
   display: flex;
-  min-width: 400px;
+  min-width: 300px;
   flex: 1;
+  margin: 15px;
+  position: relative;
+  --color: var(--first-color-alt);
 }
-.form__input {
-  width: 100%;
-  padding: 7px;
-  margin: 6px 0;
-  border: none;
-  border-bottom: 5px solid rgb(56, 147, 250);
-  background: transparent;
-  color: rgb(22, 0, 0);
-}
-.form__input:focus {
-  background: linear-gradient(to button, transparent, #333);
-  outline: none;
-  border-bottom: 3px solid rgb(0, 44, 44);
-}
+
 .form textarea {
   min-height: 140px;
   resize: none; /*evita que la caja se pueda modificar dejandolo estatico */
 }
-.form-img {
-  flex: 1;
-  display: flex;
-  padding: 10px;
-  min-width: 300px;
-  max-width: 400px;
-  order: 2;
+.form__input {
+  width: 100%;
+  background: none;
+  color: var(--glow-color);
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+  font-family: "Roboto", sans-serif;
 }
-.form-img div {
-  padding: 10px;
+.form__input:not(:placeholder-shown) {
+  color: var(--glow-color);
 }
-.img-container {
-  margin: auto;
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  transform: translateY(-12px) scale(0.7);
+  transform-origin: left top;
+  color: var(--second-color);
 }
-.img-container div {
-  background-color: #1c7;
-  border-radius: 50%;
-  text-align: center;
-  padding: 40px;
-}
-.form-img img {
-  max-width: 100%;
-  height: auto;
+.form__label {
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
 }
 .form input[type="submit"] {
   background-color: #1c7;
