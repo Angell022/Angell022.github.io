@@ -283,8 +283,7 @@ img {
 }
 .button:hover {
   background-color: var(--glow-spread-color);
-  box-shadow: 0 0 0.5em 0.25em var(--glow-color),
-    0 0 1em 0.5em var(--glow-spread-color),
+  box-shadow: 0 0 1em 0.5em var(--glow-spread-color),
     inset 0 0 0.5em 0.25em var(--glow-color);
   color: black;
   transition: 0.5s;
