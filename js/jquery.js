@@ -58,6 +58,32 @@ function scrollTop() {
 }
 window.addEventListener("scroll", scrollTop);
 
+/*============Contact Me ============*/
+const pintarMensajeExito = () => {
+    alertSuccess.classList.remove("d-none");
+    alertSuccess.textContent = "Mensaje enviado con éxito";
+};
+
+const form = document.getElementById('form')
+const sendEmail = document.getElementById('emailA')
+
+function handleSendEmail(event) {
+  event.preventDefault()
+  console.log(this)
+  const fd = new FormData(this)
+
+  sendEmail.setAttribute(
+    'href',
+    `mailTo:jass4614@gmail.com?subject=${fd.get('asunto')}&body=${fd.get(
+      'message'
+    )}`
+  )
+
+  sendEmail.click()
+}
+
+form.addEventListener('submit', handleSendEmail)
+
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
   origin: "top",

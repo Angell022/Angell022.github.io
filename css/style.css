@@ -279,20 +279,20 @@ img {
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 0.5rem;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .button:hover {
   background-color: var(--glow-spread-color);
-  box-shadow: 0 0 1em 0.5em var(--glow-spread-color),
-    inset 0 0 0.5em 0.25em var(--glow-color);
+  box-shadow: 0 0 0.5rem 0.25rem var(--glow-spread-color),
+    inset 0 0 0.5rem 0.25rem var(--glow-color);
   color: black;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .button_icon {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .button--flex {
   display: inline-flex;
@@ -494,38 +494,35 @@ img {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
 }
+.contact__container {
+  row-gap: 3rem;
+}
+.contact__description {
+  margin-bottom: var(--mb-3);
+}
+.contact__content{
+  background-color: var(--input-color);
+  border-radius: .5rem;
+  padding: .75rem 1rem .25rem;
+}
+.contact__label{
+  font-size: var(--smaller-font-size);
+  color: var(--title-color);
+  }
+  .contact__input{
+    width: 100%;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    border: none;
+    outline: none;
+    padding: .25rem .5rem .5rem 0;
+  }
+  #emailA {
+    opacity: 0;
+  }
 
-.form {
-  min-width: 300px;
-  flex: 1;
-  text-align: center;
-  padding: 30px;
-  order: 5;
-}
-.form__section {
-  display: flex;
-  min-width: 300px;
-  flex: 1;
-  margin: 15px;
-  position: relative;
-  --color: var(--first-color-alt);
-}
-
-.form textarea {
-  min-height: 140px;
-  resize: none; /*evita que la caja se pueda modificar dejandolo estatico */
-}
-.form__input {
-  width: 100%;
-  background: none;
-  color: var(--glow-color);
-  font-size: 1rem;
-  padding: 0.6em 0.3em;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid var(--color);
-  font-family: "Roboto", sans-serif;
-}
 .form__input:not(:placeholder-shown) {
   color: var(--glow-color);
 }

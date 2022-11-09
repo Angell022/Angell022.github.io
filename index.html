@@ -423,13 +423,54 @@
           </div>
         </div>
       </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+
+        <div class="contact__container container grid">
+          <form action="" class="contact__form grid" id="form">
+            <div class="contact__content">
+              <label for="user" class="contact__label">Asunto</label>
+              <input
+                type="text"
+                id="user"
+                class="contact__input"
+                placeholder=" "
+                name="asunto"
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="contact__content">
+              <label for="text-area" class="contact__label"
+                >Escribe un mensaje:</label
+              >
+              <textarea
+                id="text-area"
+                class="contact__input form-control"
+                placeholder=" "
+                name="message"
+                cols="0"
+                rows="7"
+              ></textarea>
+            </div>
+
+            <div>
+              <a type="submit" class="button button--flex">
+                Send Message
+                <i class='bx bx-send'></i></a>
+            </div>
+          </form>
+          <a id="emailA"></a>
+        </div>
+      </section>
     </main>
 
     <!--========== FOOTER CONTACT==========-->
-    <footer class="footer section container" id="contact">
+    <footer class="footer section container" id="footer">
       <div class="footer__container grid">
         <div class="footer__content">
-          <h2 class="section__title">Contact Me</h2>
           <span class="footer__description"
             >Whether it is a small venture, complex web app or business
             software, contact me.</span
