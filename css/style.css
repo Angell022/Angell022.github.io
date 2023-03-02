@@ -357,48 +357,10 @@ img {
   color: var(--first-color-second);
 }
 .skills__content:hover {
-  background-image: url("../images/back.jpg");
+  background-image: url("../images/back.webp");
   background-size: cover;
 }
 
-.services__container {
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-}
-.services__content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--container-color);
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
-  padding: 0.75rem;
-}
-.services__img {
-  max-width: 80px;
-  align-self: center;
-  margin-bottom: var(--mb-2);
-  filter: invert(1);
-}
-.services__detail {
-  color: var(--first-color-lighter);
-}
-.services__content:hover .services__detail {
-  color: var(--first-color-second);
-}
-.services__content:hover .services__img {
-  filter: invert(0);
-}
-.services__name {
-  font-weight: var(--font-semi-bold);
-  color: var(--title-color);
-  font-size: var(--normal-font-size);
-}
-.services__content:hover {
-  background-image: url("../images/Abr.png");
-  background-repeat: no-repeat;
-  background-position: right;
-}
 .portfolio__container {
   justify-items: center;
   row-gap: 2rem;
@@ -655,13 +617,6 @@ img {
   .home__blob {
     width: 270px;
   }
-  .services__container {
-    margin-top: var(--mb-6);
-  }
-  .services__container {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 2rem;
-  }
   .skills__container {
     grid-template-columns: repeat(4, 1fr);
     column-gap: 1.5rem;
@@ -670,12 +625,8 @@ img {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
   }
-  .services__content,
   .skills__content {
     padding: 1.5rem;
-  }
-  .services__img {
-    width: 130px;
   }
   .about__container {
     column-gap: 2rem;

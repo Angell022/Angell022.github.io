@@ -80,9 +80,11 @@ function handleSendEmail(event) {
   )
 
   sendEmail.click()
+  form.reset();
 }
 
 form.addEventListener('submit', handleSendEmail)
+
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
@@ -95,7 +97,7 @@ const sr = ScrollReveal({
 sr.reveal(
   `.home__data, .home__img,
             .about__data, .about__img,
-            .skills__content, .services__content,
+            .skills__content,
             .portfolio-member, .redes-sociales,
             .footer__content`,
   {
