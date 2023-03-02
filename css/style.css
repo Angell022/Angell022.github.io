@@ -283,8 +283,7 @@ img {
 }
 .button:hover {
   background-color: var(--glow-spread-color);
-  box-shadow: 0 0 0.5rem 0.25rem var(--glow-spread-color),
-    inset 0 0 0.5rem 0.25rem var(--glow-color);
+  box-shadow: 0 0 0.5rem 0.25rem var(--glow-color);
   color: black;
   transition: 0.3s;
 }
@@ -319,7 +318,7 @@ img {
 }
 .about__description {
   text-align: center;
-  margin-bottom: var(--mb-2-5);
+  margin-bottom: var(--mb-1-5);
 }
 .about__buttons {
   display: flex;
