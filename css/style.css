@@ -460,7 +460,7 @@ img {
 .portfolio-member .card__social a i {
   line-height: 0;
   font-size: 2rem;
-  color: var(--first-color-lighter);
+  color: rgba(4, 35, 36, 0.877);
 }
 .portfolio-member .portfolio__link a {
   font-size: 2rem;
@@ -476,6 +476,7 @@ img {
 }
 .portfolio-member .portfolio-info h4 {
   font-size: 2rem;
+  color: rgba(21, 4, 36, 0.877);
 }
 
 /*=============== SKILLS ===============*/
